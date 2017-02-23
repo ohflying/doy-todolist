@@ -36,6 +36,22 @@ const TodoInheritor = ($scope, store) => {
             }
         });
     };
+
+    $scope.$on('view.loaded', (event) => {
+        console.log('view.loaded');
+    });
+
+    $scope.$on('view.enter', (event) => {
+        console.log('view.enter');
+    });
+
+    $scope.$on('view.leave', (event) => {
+        console.log('view.leave');
+    });
+
+    $scope.$on('view.unloaded', (event) => {
+        console.log('view.unloaded');
+    });
 };
 
 export default Doy.extend({
