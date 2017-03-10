@@ -9,7 +9,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 export default function ListItemTemplate($scope, store) {
     return (
         <View style={{paddingVertical: 10, borderBottomWidth: 1, borderColor: 'gray', flexDirection: 'row'}}>
-            <Text style={{flex: 1}}>{store.props.rowData.text}</Text>
+            <Text style={{flex: 1}}>{store.props.rowData.text.a} id:{store.props.rowData.id}</Text>
             <TouchableOpacity style={{backgroundColor: '#000', padding: 10}} onPress={() => $scope.onPress()} >
                 <Text style={{color: '#fff'}}>delete</Text>
             </TouchableOpacity>

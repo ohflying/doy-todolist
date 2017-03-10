@@ -7,6 +7,7 @@ import Doy from 'doy';
 import template from '../templates/NewItem.template';
 
 const NewItemInheritor = ($scope, store) => {
+    store.newText = "";
     $scope.onPress = () => {
         if (store.props.onAddRow) {
             store.props.onAddRow(store.newText);
